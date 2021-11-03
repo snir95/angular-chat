@@ -1,0 +1,9 @@
+<div class="sendBox">
+        <input class="sendInput"
+        [(ngModel)]="username"
+        placeholder="username"
+        (keydown)="handleSubmit($event)"
+        />
+     
+        <button class="button" (click)=login()> login </button> 
+</div>

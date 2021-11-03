@@ -1,0 +1,8 @@
+<div class="sendBox">
+    <input class="sendInput"
+    [(ngModel)]="message"
+    (keydown)="handleSubmit($event)"
+    placeholder="write your message here:"/>
+
+    <button class="sendButton" (click)=send()>send </button> 
+</div>
