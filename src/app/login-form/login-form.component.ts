@@ -8,7 +8,7 @@ import { ChatService } from '../services/chat.service';
   styleUrls: ['./login-form.component.css']
 })
 export class LoginFormComponent implements OnInit {
-  username: string;
+  username?: string;
 
   constructor(private chat: ChatService, private router: Router) {
   }
@@ -17,8 +17,10 @@ export class LoginFormComponent implements OnInit {
   }
 
   public login() {
+    if(this.username){
     this.chat.user = this.username;
     this.router.navigate(['/chat']);
+   }
   }
 
   handleSubmit(event:any)

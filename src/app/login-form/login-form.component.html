@@ -1,9 +1,22 @@
-<div class="sendBox">
-        <input class="sendInput"
-        [(ngModel)]="username"
-        placeholder="username"
-        (keydown)="handleSubmit($event)"
-        />
-     
-        <button class="button" (click)=login()> login </button> 
+<div class="container h-100 pt-5 mt-5">
+        <div class="row justify-content-center title">
+                <div class="col text-center">
+                        <h3>Hello! what's your name?</h3>
+                </div>
+
+        </div>
+        <div class="row h-50 align-center pt-5">
+                <div class="col justify-content-center my-auto d-flex">
+                        <div class="col-4 justify-content-center loginBox">
+                                <input class="login-input"
+                                [(ngModel)]="username"
+                                placeholder="username"
+                                (keydown)="handleSubmit($event)"
+                                />
+                        
+                                <button class="button" (click)=login()> login </button> 
+                
+                        </div>
+                </div>
+        </div>
 </div>

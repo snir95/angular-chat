@@ -1,3 +1,4 @@
+@import "~bootstrap/dist/css/bootstrap.css";
 *{
     height: 100%;
     box-sizing: border-box;
@@ -9,7 +10,11 @@
 body{
     width: 100%;
     min-height: 100%;
-    background: #eee;
+    background-color: #fff;
+    background: 
+    linear-gradient(180deg, rgba(100,200,255,0.6), rgba(0,0,0,0.9)),
+    url('./assets/img/download.jpg') center center no-repeat;
+
     background-attachment: fixed;
     background-size: cover;
     font-family: "open sans", sans-serif;
