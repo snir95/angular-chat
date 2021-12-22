@@ -17,6 +17,14 @@
    justify-content: center;
    align-items: center;
    opacity: 0.5;
+   color: black !important;
+   border: 0;
+   border-radius: 5px;
+}
+
+::placeholder{
+  color: black;
+  opacity: 1;
 }
 
 .title{
@@ -29,9 +37,11 @@
 
 .login-input{
   text-align: left;
+  background-color: transparent !important;
+
 }
 
 .button{
     text-align:center;
-  background-color: white;
+    background-color: transparent !important;
 }
